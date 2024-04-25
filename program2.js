@@ -1,7 +1,6 @@
 function smallestMissingPositiveInteger(nums) {
   const n = nums.length;
 
-  // Step 1: Replace negative numbers and numbers greater than n with 0
   for (let i = 0; i < n; i++) {
     if (nums[i] <= 0 || nums[i] > n) {
       nums[i] = 0;
