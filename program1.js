@@ -24,5 +24,3 @@ function longestSubstring(s) {
 
 module.exports = { longestSubstring };
 
-// Example usage:
-// console.log(longestSubstring("abcabcbb")); // Output: 3
