@@ -7,7 +7,6 @@ function smallestMissingPositiveInteger(nums) {
     }
   }
 
-  // Step 2: Use the array itself as a hashmap
   for (let i = 0; i < n; i++) {
     const index = Math.abs(nums[i]) - 1;
     if (index < n && nums[index] > 0) {
@@ -15,7 +14,6 @@ function smallestMissingPositiveInteger(nums) {
     }
   }
 
-  // Step 3: Find the smallest missing positive integer
   for (let i = 0; i < n; i++) {
     if (nums[i] >= 0) {
       return i + 1;
